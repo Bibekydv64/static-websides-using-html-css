@@ -1,0 +1,320 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(52, 50, 50);
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+
+.container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.sidebar{
+    height: 90vh;
+    background-color: rgb(48, 46, 46);
+    border-radius: 15px;
+}
+
+.main-bar{
+    height: 200vh;
+    background-color: rgb(48, 46, 46);
+    border-radius: 15px;
+}
+
+.refrence1{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 150px;
+    height: 170px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.text{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 100px;
+}
+.text1{
+    width: 190px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100px;
+    background-color: rgb(109, 110, 107);
+    border: 2px solid rgb(50, 55, 43);
+    border-radius: 10px;
+    padding-top: 5px;
+    color: rgb(209, 222, 26);
+    margin-left: 60px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.img-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.img-refrence{
+    width: 50px;
+}
+.box{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+.middle-text{
+    margin-top: 20px;
+}
+
+.main-bar-container{
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+.nav-bar{
+    color: whitesmoke;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 19px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    margin-right: 5px;
+    font-weight:bolder;
+
+}
+
+.bar1{
+    color: yellow;
+}
+
+.nav-bar:hover{
+    color: yellow;
+}
+
+
+
+
+.section1{
+    margin-top: 20px;
+}
+
+/* .about{
+
+} */
+
+
+.line{
+    height: 5px;
+    width: 60px;
+    background-color: rgb(225, 225, 16);
+    margin-top: 5px;
+}
+.p{
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.section2{
+    margin-top: 30px;
+}
+
+.grid-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap: 10px;
+
+}
+
+.icon-img{
+    height: 48px;
+    width: 48px;
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+
+.items{
+    background-color: rgb(83, 79, 79);
+    border-radius: 10px;
+    border: 3px solid rgb(32, 31, 31);
+    transition:transform 0.3s ease,boxshadow 0.3s ease;
+}
+
+.items:hover{
+    transform: scale(1.1);
+}
+
+.name{
+    margin-left: 35px;
+}
+
+/* <!-- main Section2 container --> */
+
+
+/* Base styles matching the dark resume theme */
+.section3 {
+  margin-top: 35px;
+  max-width: 600px;
+}
+
+.section3 h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Yellow accent line under the section title */
+.line {
+  width: 40px;
+  height: 4px;
+  background-color: #d4af37; 
+  margin-bottom: 25px;
+}
+
+/* Timeline Container creating the long vertical line */
+.education-wrapper {
+  position: relative;
+  border-left: 2px solid #555; /* The vertical timeline line */
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Yellow circular rings on the timeline */
+.timeline-dot {
+  position: absolute;
+  left: -27px; /* Centers the dot exactly over the vertical line */
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #222;
+  border: 2px solid #c9b037; 
+}
+
+/* Typography matching the image structure */
+.date {
+  color: #888;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.education-content h3 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.education-content h4 {
+  color: #aaa;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.grid-container2{
+    height: auto;
+    width: 900px;
+    display: flex;
+    gap: 30px;
+
+
+}
+.finnaly{
+    width: 379px;
+}
+.finnaly1{
+    width: 379px;
+}
+.finnaly2{
+    width: 379px;
+}
+.finnaly3{
+    width: 380px;
+}
+
+.icon-img2{
+    height: 200px;
+    border-radius: 25px 25px 0 0;
+    /* margin-left: 20px; */
+
+}
+
+
+.structure{
+    height: 100px;
+    width: 380px;
+    background-color: #555;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    height: 25px;
+    width: 90px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: #2f2d2d;
+    border: 2px solid #2f2d2d;
+    margin-left: 50px;
+}
+
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.footers{
+    margin-top:30px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
