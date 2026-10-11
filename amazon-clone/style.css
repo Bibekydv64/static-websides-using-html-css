@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(204, 199, 192);
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f1111;
+}
+.nav-img{
+    width:120px;
+    border:2px solid transparent;
+}
+
+.nav-img:hover{
+    border:1.5px solid white;
+}
+
+.nav-text{
+    color: aliceblue;
+    /* margin-top: 10px; */
+    margin-left: 20px;
+    
+}
+.nav-text:hover{
+    border: 2px solid whitesmoke;
+}
+
+
+.search{
+    margin-left: 20px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* background-color: whitesmoke; */
+}
+
+.option{
+    height: 43px;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 10px 0px 0px  10px;
+
+}
+
+.input{
+    width: 750px;
+    height: 43px;
+    border: none;
+    font-size: 20px;
+
+}
+.icon{
+    width: 45px;
+    height: 43px;
+    background-color: rgb(153, 129, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    color: whitesmoke;
+    font-size: 25px;
+    border: none;
+    border-radius: 0px 10px 10px  0px;
+}
+
+.option-lan{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.selcetor-lan{
+    height: 43px;
+    background-color: #0f1111;
+    color: whitesmoke;
+    border: 2px solid #0f1111;    
+}
+.selcetor-lan:hover{
+    border: 2px solid whitesmoke;
+}
+
+.order-nav{
+    color: whitesmoke;
+    margin-left: 40px;
+
+}
+.order-nav:hover{
+    border: 2px solid whitesmoke;
+}
+
+.nav-icon{
+    color: whitesmoke;
+    height: 30px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.nav-icon:hover{
+    border: 2px solid whitesmoke;
+}
+
+.span1{
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+
+.main-panel{
+    background-color: #2f3939;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+}
+
+.similars{
+    margin-left: 10px;
+}
+
+.panel-text{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.icons{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.panel-last{
+    font-size: 20px;
+    padding-left: 650px;
+}
+
+
+.background-panel{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    background-image: url(/amazon-clone/aasist/hero_image.jpg);
+    background-size:cover;
+    padding-bottom: 40px;
+
+    
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    color: black;
+    height: 30px;
+    width: 80%;
+    text-transform: capitalize;
+    border-radius: 7px;
+}
