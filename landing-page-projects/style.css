@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background:linear-gradient(to right, #032e49,#6d7175)
+}
+
+.container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+.nav-class{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-size: large;
+    text-decoration: none;
+    margin: 20px;
+
+    
+}
+
+.btn{
+    height: 35px;
+    width: 90px;
+    margin-top: -10px;
+    background-color: #032e49;
+    color: aliceblue;
+    border: 2px solid #032e49;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-container{
+    margin-top: 200px;
+}
+
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    height: 25px;
+    width: 210px;
+    background-color: #28292a;
+    padding-top: 5px;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding-left: 20px;
+
+}
+.text1{
+    font-size: 100px;
+    color: whitesmoke;
+}
+
+.main-img{
+    margin-top: 200px;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, boxshadow 0.3s;
+}
+.p{
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 100px;
+}
+
+.btn1{
+    margin-top: 30px;
+    height: 40px;
+    width: 125px;
+    background-color: #148dd8;
+    color: white;
+    border: 2px solid#032e49;
+    border-radius: 10px;
+    transition: transform 0.3s ease, boxshadow 0.3s;
+}
+
+.btn3{
+    margin-left: 100px;
+    height: 40px;
+    width: 125px;
+    background-color: #032e49;
+    border: 2px solid #032e49;
+    color: whitesmoke;
+    border-radius: 10px;
+    transition: transform 0.3s ease, boxshadow 0.3s;
+}
+.btn1:hover{
+    transform: scale(1.1);
+}
+.btn3:hover{
+    transform: scale(1.1);
+}
+
+.main-img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.footer-bottom{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.footers{
+    margin-top: 50px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
