@@ -1,0 +1,97 @@
+/* Reset and General Body Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Header Banner - Matches Top Blue Area */
+.main-header {
+    background-color: #225bb7;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar - Matches Darker Blue Area */
+.nav-bar {
+    background-color: #184182;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* Nav Buttons Layout */
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    background-color: #225bb7;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    background-color: #5b8ee4; /* Highlight accent style */
+}
+
+/* Split Column Layout Area */
+.content-wrapper {
+    display: flex;
+    min-height: calc(100vh - 145px); /* Automatically takes remaining screen height */
+}
+
+/* Left Text Area */
+.left-content {
+    flex: 3; /* Content takes up 75% width */
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.left-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.left-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Right Blue Background Sidebar */
+.right-sidebar {
+    flex: 1; /* Sidebar takes up remaining 25% width */
+    background-color: #5b8ee4;
+}
+
+/* Mobile responsive layout patch */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .right-sidebar {
+        height: 150px;
+    }
+    .nav-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+}

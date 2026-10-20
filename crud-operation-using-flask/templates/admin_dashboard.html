@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud-operation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin-dashboard.css') }}">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <nav class="container">
+        <h1 class="h1">HR ERP SYSTEM</h1>
+        <div class="nav-div">
+            <a class="nav-menu" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-menu" href="#Add Emp">Add Emp</a>
+            <a class="nav-menu" href="#Show Emp">Show Emp</a>
+            <a class="nav-menu" href="#Search Emp">Search Emp</a>
+            <a class="nav-menu" href="#logout">Logout</a>
+            <a class="nav-menu1" href="#logout"><i class="ri-menu-line"></i></a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container1">
+            <h2 class="h2">Welcome Administrator...</h2>
+        </div>
+        <div class="container2"></div>
+    </main>
+</body>
+</html>
