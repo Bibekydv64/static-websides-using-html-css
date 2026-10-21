@@ -1,0 +1,9 @@
+<nav class="admin-nav" aria-label="Admin navigation">
+    <a class="active" href="{{ url_for('admin_dashboard') }}">Home</a>
+    <a class="nav-disabled" aria-disabled="true">Add Employee</a>
+    <a class="nav-disabled" aria-disabled="true">Show Employee</a>
+    <a class="nav-disabled" aria-disabled="true">Search Employee</a>
+    <form method="post" action="{{ url_for('admin_logout') }}">
+        <button type="submit">Logout</button>
+    </form>
+</nav>

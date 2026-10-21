@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+</head>
+<body id="top">
+    {% include "navbar.html" %}
+
+    <main class="page-container" id="contact">
+        <div class="content-left">
+            <h2>Get in Touch</h2>
+            <p>Please fill out the form below to contact us.</p>
+            <p class="form-notice">This demo form is not connected to an email service, so messages will not be sent.</p>
+            {% if error %}
+                <p class="form-error" role="alert">{{ error }}</p>
+            {% endif %}
+            {% if notice %}
+                <p class="form-notice" role="status">{{ notice }}</p>
+            {% endif %}
+
+            <form class="contact-form" method="post" action="{{ url_for('contact') }}">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" maxlength="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" maxlength="5000" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <aside class="sidebar-right" aria-hidden="true"></aside>
+    </main>
+
+    {% include "footer.html" %}
+</body>
+</html>

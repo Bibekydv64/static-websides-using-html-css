@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    height: auto;
+    flex-direction: column;
+    background-color: #f4f6fa;
+}
+
+.content-wrapper {
+    display: grid;
+    flex: 1;
+    grid-template-columns: minmax(0, 3fr) minmax(220px, 1fr);
+    background-color: #f4f6fa;
+}
+
+.left-content {
+    padding: clamp(32px, 7vw, 80px);
+    color: #253247;
+}
+
+.left-content h2 {
+    margin-bottom: 24px;
+    color: #173f7a;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.left-content p {
+    max-width: 70ch;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.right-sidebar {
+    background-color: rgb(90, 141, 236);
+}
+
+@media (max-width: 640px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .right-sidebar {
+        min-height: 120px;
+    }
+}
