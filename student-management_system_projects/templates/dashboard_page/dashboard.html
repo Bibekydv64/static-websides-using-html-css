@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base-css/admin-nav-base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard/dashboard.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+{% include "base-html-page/admin-nav-base.html" %}
+
+    <section>
+        <main class="admin-main-container">
+
+                <img class="main-img" src="{{ url_for('static', filename = 'images/main-logo.jpg') }}" alt="img">
+
+            <div class="container">
+                <h1 class="box ">Welcome To Student Managment System</h1>
+                <p class="box" >Manage Your Students Easily and Efficently</p>
+            </div>
+        </main>
+    </section>
+
+    <section>
+        <div class=" container-section2">
+            <div class="box1 miniconrainer1">
+                <div class="font-logo"><i class="fa-solid fa-circle-user"></i></div>
+                <div>
+                    <p class="p">Total Students</p>
+                    <h3 class="p">90</h3>
+                </div>
+            </div>
+
+
+            <div class="box1 miniconrainer2">
+                <div class="box1 miniconrainer1">
+                    <div class="font-logo"><i class="fa-solid fa-circle-user"></i></div>
+                    <div>
+                        <p class="p">Male Students</p>
+                        <h3 class="p">100</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box1 miniconrainer3">
+                <div class="box1 miniconrainer1">
+                    <div class="font-logo"><i class="fa-solid fa-circle-user"></i></div>
+                    <div>
+                        <p class="p">Female Students</p>
+                        <h3 class="p">90</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box1 miniconrainer4">
+                <div class="btn"><a class="innertext" href="/add-student">+ Add New Student</a></div>
+                <div class="btn1"><a class="inner-text" href="#datbase">View All Students</a></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container-section3">
+            <h3 class="h3-section3">Recent Students</h3>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Cources</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+                <td>Sweden</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Königlich Essen</td>
+                <td>Philip Cramer</td>
+                <td>Germany</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+                <td>Italy</td>
+              </tr>
+              <tr>
+                <td>North/South</td>
+                <td>Simon Crowther</td>
+                <td>UK</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Paris spécialités</td>
+                <td>Marie Bertrand</td>
+                <td>France</td>
+                <td>France</td>
+              </tr>
+            </table>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
