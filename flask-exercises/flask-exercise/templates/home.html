@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="/flask-exercise/static/style.css"> -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+
+</head>
+<body>
+    <main>
+        <nav class="nav">
+                <a class="nav-img class" href="{{ url_for('home.html') }}">Home</a>
+                <a class="nav-img class" href="{{ url_for('signin.html') }}">sigin in</a>
+                <a class="nav-img class" href="{{ url_for('signup.html') }}">sign up</a>
+        </nav>
+
+        <section class="section-container">
+            <div class="section-small-container">
+                <h1 class="text ">Welcome</h1>
+                <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, suscipit eos doloribus iste blanditiis expedita tempora veritatis quod. Neque quos voluptatibus officiis? Nemo.</p>
+                <div class="link"><a class="inner" href="https://www.youtube.com/@siddharthyadav1353">Youtube link</a></div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/flask-exercise/static/signin.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'signin.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            <h1 class="heading">Signup</h1> 
+            <div>
+                <input class="form" type="text" name="username" placeholder="Email">
+            </div>
+            
+            <div>
+                <input class="form" type="text" name="phone" placeholder="Phone">
+            </div>
+            <div>
+                <input class="form" type="text" name="password" placeholder="pasword">
+            </div>
+
+            <div>
+                <input class="cheak-box" type="checkbox"> Remember Me
+            </div>
+
+            <button class="btn" value="/signup">Signup</button>
+            <!-- <p class="forget">forget your password?</p> -->
+            <div class="line">---------------------or---------------------</div>
+            <button class="btn">signin</button>
+            
+        </form>
+    </div>
+</body>
+</html>
